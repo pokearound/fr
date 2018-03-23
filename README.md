@@ -1,5 +1,8 @@
 # File rename
 
+### Badges
+[![codecov](https://codecov.io/gh/anandchakru/fr/branch/master/graph/badge.svg)](https://codecov.io/gh/anandchakru/fr)
+
 ### Clone
 ```
 git clone https://github.com/anandchakru/fr.git
