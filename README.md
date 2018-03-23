@@ -1,6 +1,7 @@
 # File rename
 
 ### Badges
+[![Build Status](https://travis-ci.org/anandchakru/fr.svg?branch=master)](https://travis-ci.org/anandchakru/fr)
 [![codecov](https://codecov.io/gh/anandchakru/fr/branch/master/graph/badge.svg)](https://codecov.io/gh/anandchakru/fr)
 
 ### Clone
