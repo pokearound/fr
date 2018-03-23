@@ -10,7 +10,6 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import com.google.common.io.Files;
 
 public class Application {
 	private static final String OLD_FILE_NAME = "a";
@@ -136,16 +135,12 @@ public class Application {
 	}
 	private static File directory(CommandLine cl) throws RuntimeException {
 		String dir = cl.getOptionValue(DIRECTORY);
-		Path path = Paths.get(dir == null ? "" : dir).normalize();
-		if (path != null) {
-			File file = new File(Files.simplifyPath(path.normalize().toAbsolutePath().toString()));
-			if (file.isDirectory()) {
-				return file;
-			} else {
-				throw new RuntimeException("Invalid Dir: " + path.toAbsolutePath().toString());
-			}
+		Path path = Paths.get(dir == null ? "" : dir.trim()).normalize();
+		File file = new File(path.normalize().toAbsolutePath().toString());
+		if (file.isDirectory()) {
+			return file;
 		} else {
-			throw new RuntimeException("Invalid Dir: ");
+			throw new RuntimeException("Invalid Dir: " + path.toAbsolutePath().toString());
 		}
 	}
 }
