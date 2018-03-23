@@ -4,6 +4,8 @@ Multi-file rename using java.
 [![Build Status](https://travis-ci.org/anandchakru/fr.svg?branch=master)](https://travis-ci.org/anandchakru/fr)
 [![codecov](https://codecov.io/gh/anandchakru/fr/branch/master/graph/badge.svg)](https://codecov.io/gh/anandchakru/fr)
 
+### Download
+Find the latest release [here](https://github.com/anandchakru/fr/releases/latest) to download.
 
 ### Usage
 
@@ -22,6 +24,9 @@ usage: java -jar fr-1.0-jar-with-dependencies.jar.jar
  -v         Verbose output, optional, defaults to false
 
 ```
+doesn't support GUI yet.
+
+---
 
 ### Clone
 ```
